@@ -27,7 +27,6 @@ Dog &Dog::operator=(const Dog &other)
     {
         this->type = other.type;
         
-        // DEEP COPY BURADA YAPILIR 
         if (this->brain)
             delete this->brain; 
         this->brain = new Brain(*other.brain); 

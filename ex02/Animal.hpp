@@ -11,10 +11,9 @@ class Animal
         Animal();
         Animal(const Animal &other);
         Animal &operator=(const Animal &other);
-        virtual ~Animal(); // önemli !!!!!!!!!!!!!!!! 
-        //sadece animalde virtual olmalı diğerlerine gerek yok neyden miras alacaksa ona göre uygun bir virtual eklenmeli 
+        virtual ~Animal();
 
-        virtual void makeSound() const = 0; //önemli
+        virtual void makeSound() const = 0;
         std::string getType() const;
 };
 

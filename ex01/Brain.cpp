@@ -3,9 +3,12 @@
 Brain::Brain()
 {
     std::cout << "Brain constructor called" << std::endl;
-
-    for(int i = 0; i < 100; i++)
-        this->ideas[i] = "What should I do!";
+    int i = 0;
+    while (i < 100)
+    {
+        this->ideas[i] = "BraiiiiiiinnnzzzZ...";
+        i++;
+    }
 }
 
 Brain::~Brain()

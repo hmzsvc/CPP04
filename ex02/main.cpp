@@ -4,9 +4,6 @@
 
 int main()
 {
-    // const Animal* test = new Animal(); 
-    // Bu satırı açarsan derlenmez animal tipinde birşey oluşturulmaz
-
     const Animal* j = new Dog();
     const Animal* i = new Cat();
 

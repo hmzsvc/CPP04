@@ -10,7 +10,7 @@ class Dog :public Animal
         Brain* brain;
     public:
         Dog();
-        virtual ~Dog(); // neden virtual ???
+        virtual ~Dog();
         Dog(const Dog &other);
         Dog &operator=(const Dog &other);
 

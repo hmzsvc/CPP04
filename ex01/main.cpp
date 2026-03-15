@@ -4,22 +4,27 @@
 
 int main()
 {
-    const int count = 4;
+    const Animal* j = new Dog();
+    const Animal* i = new Cat();
+
+    delete j;
+    delete i;
+
+    
+    const int count = 8;
     Animal* animals[count];
 
-    for (int i = 0; i < count; i++) {
-        if (i < count / 2)
-            animals[i] = new Dog();
+    for (int k = 0; k < count; k++) {
+        if (k < count / 2)
+            animals[k] = new Dog();
         else
-            animals[i] = new Cat();
-    }   
-    for (int i = 0; i < count; i++) {
-        delete animals[i]; // Animal olarak siliniyor, virtual destructor şart! 
+            animals[k] = new Cat();
     }
-    Dog basic;
-    {
-        Dog tmp = basic; // Copy constructor çalışır 
-    } // tmp burada yok olur, eğer sığ kopya olsaydı basic'in beyni de giderdi! 
     
+    for (int k = 0; k < count; k++) {
+        delete animals[k];
+    }
+
+
     return 0;
 }

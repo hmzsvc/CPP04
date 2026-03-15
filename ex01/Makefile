@@ -1,4 +1,4 @@
-NAME = polymorphism
+NAME = copy
 
 CC = c++
 CFLAGS = -Wall -Werror -Wextra
@@ -7,7 +7,12 @@ STD = -std=c++98
 RM = rm -rf
 
 SRCS =	main.cpp\
-		.cpp\
+		Animal.cpp\
+		Dog.cpp\
+		Cat.cpp\
+		WrongAnimal.cpp\
+		WrongCat.cpp\
+		Brain.cpp\
 
 
 OBJ_DIR = obj

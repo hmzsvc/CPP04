@@ -7,7 +7,11 @@ STD = -std=c++98
 RM = rm -rf
 
 SRCS =	main.cpp\
-		.cpp\
+		Animal.cpp\
+		Dog.cpp\
+		Cat.cpp\
+		WrongAnimal.cpp\
+		WrongCat.cpp\
 
 
 OBJ_DIR = obj
